@@ -14,4 +14,5 @@ public class PostRequestDto {
         return new Post(this.id, this.title, this.content, this.username);
     }
 
+
 }

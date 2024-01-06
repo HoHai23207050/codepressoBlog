@@ -9,5 +9,9 @@ import java.util.List;
 public interface PostMapper {
     List<Post> fineAll();
     List<Post> findByPage(@Param("limit") Integer limit, @Param("offset") Integer offset);
+    Post findOne(@Param("id") Integer id);
+    Integer save(@Param("post") Post post);
+    Integer update(@Param("post") Post post);
+
 
 }
